@@ -1,0 +1,109 @@
+body{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: #2c2c4d ;
+}
+
+.bienvenue{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5em;
+    height: 100vh;
+}
+
+#bienvenueTitle{
+    font-size: 10em;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    color: #007fff;
+    position: relative;
+    transition: all .3s ease-in-out;
+}
+
+#bienvenueTitle:hover{
+    color: #00000000;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: #007fff;
+}
+
+#bienvenueTitle::before{
+    content: '';
+    background-color: #a9eafe;
+    position: absolute;
+    border-radius: 5em;
+    left: 0;
+    bottom: calc(50% - 8px);
+    width: 100%;
+    height: 8px;
+    z-index: -1;
+    transition: all .3s ease-in-out;
+}
+
+#bienvenueTitle:hover::before {
+    height: 40%;
+}
+
+
+#bienvenueSecondTitle{
+    font-size: 1.2em;
+    background-color: #ffffff00;
+    border: 2px solid #a9eafe;
+    border-radius: 4em;
+    padding: 0.8em;
+    transition: transform 0.1s ease;
+    color: #fff;
+    animation: button-glow 1.5s infinite alternate
+}
+
+#imgLogo{
+    width: 50vw;
+}
+
+#footerIndex{
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    padding: 1em;
+    background-color: #ffffff00;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#cvA{
+    background-color: #ffffff00;
+    border: 2px solid #a9eafe;
+    border-radius: 4em;
+    padding: 0.8em;
+    transition: transform 0.1s ease;
+    color: #fff;
+}
+
+#réseaux{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.réseauxA{
+    background-color: #ffffff00;
+    border: 2px solid #a9eafe;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    padding: 0.8em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.réseauxA img{
+    width: 1.5em;
+    height: 1.5em;
+}
