@@ -5,17 +5,31 @@ body{
     background: #202020 ;
 }
 
+#photoJules{
+    width: 25vw;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #000;
+}
+
 .bienvenue{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
-    gap: 1em;
     height: 100vh;
 }
 
+#bienvenueTexte{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
 #bienvenueTitle{
-    font-size: 10em;
+    font-size: 8em;
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
     color: #007fff;
@@ -46,20 +60,35 @@ body{
     height: 40%;
 }
 
+#bienvenueSubTitle{
+    font-size: 2em;
+    font-family: 'Oswald', sans-serif;
+    color: #ffffff;
+}
 
-#bienvenueSecondTitle{
+#bienvenueSubTitle  span{
+    font-size: 3rem;
+    font-family: 'Oswald', sans-serif;
+    color: #a9eafe;
+}
+
+#imgLogo{
+    max-height: 3em;
+    object-fit: contain;
+    border: 2px solid red;
+}
+
+#bienvenuebutton{
     font-size: 1.2em;
+    margin-top: 2em;
     background-color: #ffffff00;
     border: 2px solid #a9eafe;
     border-radius: 4em;
     padding: 0.8em;
     transition: transform 0.1s ease;
     color: #fff;
-    animation: button-glow 1.5s infinite alternate
-}
+    animation: button-glow 1.5s infinite alternate;
 
-#imgLogo{
-    width: 50vw;
 }
 
 #footerIndex{
