@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/stylePropos.css">
+    <script type="text/javascript" src="js/app.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -16,9 +17,6 @@
 
 <body>
 
-    <div class="loadingPage"></div>
-        <h1 class="loadingPageTitle">A Propos</h1>
-    </div>
     
     <header class="burgerMenu">
 
@@ -42,9 +40,83 @@
     </header>
 
     <main>
+        <h1 class="bigTitle mb" id="bienvenueTitle">A propos</h1>
+        <div id="proposContent" >
+            <div id="photoLeft">
+                <img src="images/Photo-Jules.jpg" alt="Photo de moi">
+            </div>
+            <div id="textRight">
+                <h2 class="title mb">Présentation</h2>
+                <p >Je suis un développeur web passionné et curieux. J’ai débuté mon parcours en 2022 et j’ai travaillé dans le secteur du digital depuis le début de ma carrière. J’ai eu l’opportunité d’apprendre à développer des applications web grâce à mes cours et mes expériences professionnelles.</p>
+                <h2 class="title mb mt">Langages et Outils</h2>
+                <div id="compFront">
+                    <img class="imgCompFront" src="images/HTML-logo.png" alt="Logo du langage HTML">
+                    <img class="imgCompFront" src="images/CSS3_logo.svg" alt="Logo du langage CSS">
+                    <img class="imgCompFront" src="images/JavaScript-logo.png" alt="Logo du langage JavaScript">
+                </div>
+                <div id="compBack">
+                    <img class="imgCompBack" src="images/php-logo.webp" alt="Logo du langage PHP">
+                    <img class="imgCompBack" src="images/SQL-logo.png" alt="Logo du langage SQL">
+                </div>
+                <div id="compDesign">
+                    <img class="imgCompDesign" src="images/Figma-logo.png" alt="Logo de Figma">
+                    <img class="imgCompDesign" src="images/adobe-logo.png" alt="Logo de la licence Adobe">
+                </div>
+                <h2 class="title mb mt">Compétences</h2>
+                <ul>
+                    <li>- Développement Front & Responsive</li>
+                    <li>- Développement Back & POO</li>
+                    <li>- Création de design avec Adobe</li>
+                </ul>
+            </div>
+        </div>
 
+        <h2 class="midTitle mt">FAQ</h2>
+
+        <div id="QA">
+            <div class="QA-item">
+                <h3 class="questionTitle">Qui suis-je ?</h3>
+                <p class="answerText">Bonjour, je m’appelle Jules LEROUX, j'ai 18 ans, je suis un étudiant de deuxième année souhaitant devenir développeur web. <p>
+            </div>
+            <div class="QA-item">
+                <h3 class="questionTitle">Mon parcours scolaire ?</h3>
+                <p class="answerText">J’ai obtenu le baccalauréat en 2022 avec les spécialités NSI et SES au Lycée Sacré Coeur d’Amiens. Après cela, j’ai démarré mes études supérieures chez MyDigitalSchool à Lille afin d’y passer un MBA Développeur Full-Stack tout en ayant des compétences dans tous les domaines du digital (design, communication, marketing, web). </p>
+            </div>
+            <div class="QA-item">
+                <h3 class="questionTitle">Mes expériences professionnelles ?</h3>
+                <p class="answerText">J’ai réalisé un stage de 2 mois dans le développement web. J’ai également donné quelques cours de design et de développement web dans un lycée amiénois. </p>
+            </div>
+            <div class="QA-item">
+                <h3 class="questionTitle">Mes passions ?</h3>
+                <p class="answerText">Mes passions sont : <br>
+                Le Ukulele que je pratique depuis mai 2024. <br>
+                Le sport en général. </p>
+                
+            </div>
+            <div class="QA-item">
+                <h3 class="questionTitle">Mes objectifs via ce portfolio ?</h3>
+                <p class="answerText">Me présenter, présenter mes projets, mes compétences, développer un réseau professionnel et établir un contact avec des entreprises intéressées par mon profil. </p>
+            </div>
+            
+            
+        </div>
+        
     </main>
+
+    <footer class="footer">
+        <div class="cv">
+            <a class="animFollow boutonStyle" id="cvA" href="index.html" download="">Télécharger mon CV</a>
+        </div>
+
+        <div class="réseaux">
+            <a class="réseauxA animFollow" href="#"><img src="images/logo-instagram.png" alt="Instagram"></a>
+            <a class="réseauxA animFollow" href="#"><img src="images/logo-linkedin.webp" alt="LinkedIn"></a>
+            <a class="réseauxA animFollow" href="#"><img src="images/logo-github.png" alt="GitHub"></a>
+        </div>
+    </footer>
+    <p class="footerRights">2024 - Portfolio réalisé par Jules LEROUX</p>
+    
 
 </body>
 
-<script type="text/javascript" src="js/app.js" defer></script>
+

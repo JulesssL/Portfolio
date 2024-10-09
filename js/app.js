@@ -18,18 +18,19 @@ const burger = document.querySelector('.boxBurger');
 const sidenav = document.getElementById("mySideNav");
 let isBurgerActive;
 
-const loadingPage = document.querySelector('.loadingPage');
+const QA_item = document.querySelectorAll('.QA-item .questionTitle');
+
 
 // Actions
 
 document.addEventListener('DOMContentLoaded', () => {
 
-    
-    loadingPage.classList.add("active");
-    setTimeout(() => {
-        loadingPage.classList.remove("active");
-        loadingPage.classList.add("inactive");
-    }, 400);
+    QA_item.forEach((question) => {
+        question.addEventListener('click', () => {
+            const answer = question.nextElementSibling;
+            answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+        });
+    });
 
     burger.addEventListener('click', e => {
         e.target.classList.toggle('active');
@@ -43,3 +44,17 @@ document.addEventListener('DOMContentLoaded', () => {
     })
 
 })
+
+
+// Fonctions 
+
+function getAge(dateString) {
+    const today = new Date();
+    const birthDate = new Date(dateString);
+    const age = today.getFullYear() - birthDate.getFullYear();
+    const m = today.getMonth() - birthDate.getMonth();
+    if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+        age--;
+    }
+    return age;
+}

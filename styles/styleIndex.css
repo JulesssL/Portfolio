@@ -28,38 +28,6 @@ body{
     align-items: flex-start;
 }
 
-#bienvenueTitle{
-    font-size: 8em;
-    font-family: 'Oswald', sans-serif;
-    text-transform: uppercase;
-    color: #007fff;
-    position: relative;
-    transition: all .3s ease-in-out;
-}
-
-#bienvenueTitle:hover{
-    color: #00000000;
-    -webkit-text-stroke-width: 3px;
-    -webkit-text-stroke-color: #007fff;
-}
-
-#bienvenueTitle::before{
-    content: '';
-    background-color: #a9eafe;
-    position: absolute;
-    border-radius: 5em;
-    left: 0;
-    bottom: calc(50% - 8px);
-    width: 100%;
-    height: 8px;
-    z-index: -1;
-    transition: all .3s ease-in-out;
-}
-
-#bienvenueTitle:hover::before {
-    height: 40%;
-}
-
 #bienvenueSubTitle{
     font-size: 2em;
     font-family: 'Oswald', sans-serif;
