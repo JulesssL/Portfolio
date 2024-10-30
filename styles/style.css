@@ -252,6 +252,19 @@
     font-weight: 300;
 }
 
+.boutonStyle{
+    font-size: 1.2em;
+    margin-top: 2em;
+    background-color: #ffffff00;
+    border: 2px solid #a9eafe;
+    border-radius: 4em;
+    padding: 0.8em;
+    transition: transform 0.1s ease;
+    color: #fff;
+    animation: button-glow 1.5s infinite alternate;
+    cursor: pointer;
+}
+
 .boutonStyle::before{
     content: "";
     background-color: #ffffff;

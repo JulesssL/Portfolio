@@ -77,8 +77,8 @@ main{
     border-bottom: 3px solid white;
 }
 
-#QA{
-    width: 70%;
+.QA{
+    width: 70vw;
 }
 
 @media (max-width:767px){

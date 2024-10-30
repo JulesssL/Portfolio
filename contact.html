@@ -15,11 +15,7 @@
 </head>
 
 <body>
-    <div class="travaux">
-        <h1 class="titreTravaux">En cours</h1>
-    </div>
 
-    
     <header class="burgerMenu">
 
         <button class="boxBurger">
@@ -45,17 +41,24 @@
         
         <div class="contact">
             <div class="contactLeft">
-                <h1 class="midTitle">Contactez-moi !</h1>
-                <p>N'hésitez pas à me contacter si vous avez besoin d'un site web, d'un collaborateur en alternance ou pour la moindre question sur mon travail !</p>
+                <h2 class="contactTitle">Contactez-moi !</h2>
+                <p class="contactP">N'hésitez pas à me contacter si vous avez besoin d'un site web, d'un collaborateur en alternance ou pour la moindre question sur mon travail !</p>
             </div>
-            <div class="contactRight">
-                <form action="" method="">
-                    <input class="input"  type="text" placeholder="Nom">
-                    <input class="input"  type="email" placeholder="Email">
-                    <textarea class="input" placeholder="Message"></textarea>
-                    <input class="submit" type="submit" value="Envoyer">
-                </form>
-            </div>
+            <form class="contactRight" action="" method="">
+                <div class="formElement">
+                    <label for="nom">Nom</label>
+                    <input class="input" name="nom" type="text" placeholder="Jules LEROUX">
+                </div>
+                <div class="formElement">
+                    <label for="email">Email</label>
+                    <input class="input" name="email" type="email" placeholder="julesleroux15@gmail.com">
+                </div>
+                <div class="formElement">
+                    <label for="message">Message</label>
+                    <textarea rows="6" name="message" class="input" placeholder="Je serai intéressé par la création d'un site web..."></textarea>
+                </div>
+                <input class="animFollow boutonStyle submit" type="submit" value="Envoyer">
+            </form>
         </div>
 
         <div class="infos">

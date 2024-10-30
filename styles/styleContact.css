@@ -1,50 +1,69 @@
 body{
     width: 100%;
-    height: 100%;
+    height:100%;
     background: linear-gradient(to bottom,#202020, #373737) ;
-}
-
-.travaux{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100dvh;
-    background-color: #202020;
-}
-
-.titreTravaux{
-    font-size: 2em;
-    font-weight: bold;
 }
 
 .contact{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-items: flex-start;
+    align-items: center;
     width: 100%;
+    height: 100dvh;
 }
 
 .contactLeft{
+    padding: 4em;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    align-items: flex-start;
     gap: 1em;
     width: 50%;
-    background-color: red;
+    height:80%;
+}
+¨
+.contactTitle{
+    font-size: 3em;
+    text-transform: uppercase;
+    color: #7f7fff;
+}
+
+.contactP{
+    font-size: 1.5em;
+    color: #fff;
 }
 
 .contactRight{
+    padding: 4em;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    align-items: flex-start;
     gap: 1em;
     width: 50%;
-    background-color: blue;
+    height:80%;
+}
+
+.input{
+    background-color: #00000000;
+    color: #fff;
+    padding:0.8em 0;
+    width: 100%;
+    border-bottom: 1px solid #666666;
+}
+
+.input:focus{
+    outline: none;
+}
+
+.formElement{
+    width: 100%;
+}
+
+.submit{
+    width:33%;
 }
 
 .infos{
