@@ -71,3 +71,76 @@ body{
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #7f7fff;
 }
+
+@media (max-width:767px) {
+    body{
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to bottom,#202020, #373737);
+    }
+    
+    .projets{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; 
+        align-items: center;
+        gap: 3em;
+        height: auto;
+    }
+    
+    .projetDiv{
+        padding: 1em;
+        width: 80vw;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 4vh;
+    }
+    
+    .projetTexte{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+        gap: 1em;
+        width: 100%;
+    }
+    
+    .projetImage{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 1em;
+    }
+    
+    .projetDate{
+        color: #7f7fff;
+    }
+    
+    .projetImgs{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 1em;
+    }
+    
+    .projetImg{
+        width: 70px;
+        object-fit: cover;
+    }
+    
+    .projetNum{
+        position: absolute;
+        font-size: 5em;
+        font-weight: 600;
+        color: #00000000;
+        bottom:-5%;
+        right:-5%;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #7f7fff;
+    }
+}

@@ -4,6 +4,21 @@ body{
     background: linear-gradient(to bottom,#202020, #373737) ;
 }
 
+.travaux{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100dvh;
+    background-color: #202020;
+}
+
+.titreTravaux{
+    font-size: 2em;
+    font-weight: bold;
+}
+
 .contact{
     display: flex;
     flex-direction: row;

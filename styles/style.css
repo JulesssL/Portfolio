@@ -356,8 +356,8 @@
     }
 
     .boxBurger{
-        width: 18vw;
-        height: 18vw;
+        width: 15vw;
+        height: 15vw;
     }
     
     .sideNav {
@@ -385,6 +385,11 @@
         bottom: 3px;
         width: 20px;
         height: 2px;
+    }
+
+    .containerLinesBurger{
+        width: 80%;
+        height: 80%;
     }
 
     /* Common Styles */ 
@@ -427,6 +432,7 @@
     }
 
     .bigTitle{
+        margin-top: 5vh;
         font-size: 4em;
         font-family: 'Oswald', sans-serif;
         text-transform: uppercase;
