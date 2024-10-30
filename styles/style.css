@@ -8,7 +8,22 @@
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
     border: none;
-    transition: 0.5s ease-in-out;
+}
+
+/** Curseur **/
+
+.cursor {
+    width: 5em;
+    height: 5em;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    pointer-events: none;
+    z-index: 999999;
+    background-image: url('../images/curseur.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation: cursorAnim 10s linear infinite;
 }
 
 
@@ -151,6 +166,34 @@
 
 /* Common Styles */ 
 
+.none{
+    display: none;
+}
+
+.link{
+    position: relative;
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.8em;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.link::before{
+    content: '';
+    background-color: #fff;
+    position: absolute;
+    border-radius: 5em;
+    left: 0;
+    bottom: 0;
+    width: 2px;
+    height: 2px;
+    transition: all .3s ease-in-out;
+}
+
+.link:hover::before{
+    width: 100%;
+}
+
 .list{
     list-style-type: circle;
     margin-left: 1em;
@@ -229,7 +272,7 @@
 /** Footer **/
 
 .footer{
-    margin-top: 5em;
+    margin-top: 9em;
     padding: 2em;
     background-color: #7f7fff;
     display: flex;
@@ -295,4 +338,16 @@
         box-shadow: 0 0 10px #fff;
     }
 }
+
+@keyframes cursorAnim {
+    0% {
+        transform: rotate(0);
+
+    }
+    100% {
+        transform: rotate(360deg);
+       
+    }
+}
+
 

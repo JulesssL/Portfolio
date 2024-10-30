@@ -6,7 +6,7 @@ buttonFollow.forEach(element => {
         const x = e.clientX - rect.left - rect.width / 2;
         const y = e.clientY - rect.top - rect.height / 2;
     
-        element.style.transform = `translate(${x * 0.2}px, ${y * 0.2}px)`;
+        element.style.transform = `translate(${x * 0.1}px, ${y * 0.1}px)`;
     });
 
     element.addEventListener('mouseleave', () => {
@@ -20,6 +20,13 @@ let isBurgerActive;
 
 const QA_item = document.querySelectorAll('.QA-item .questionTitle');
 
+const cursor = document.querySelector('.cursor');
+document.addEventListener('mousemove', (event) => {
+    const x = event.clientX;
+    const y = event.clientY;
+    cursor.style.left = `${x}px`;
+    cursor.style.top = `${y}px`;
+});
 
 // Actions
 

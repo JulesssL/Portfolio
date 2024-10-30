@@ -1,115 +1,73 @@
 body{
     width: 100%;
     height: 100%;
-    overflow: hidden;
-    background: #202020 ;
+    background: linear-gradient(to bottom,#202020, #373737);
 }
 
 
 .projets{
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between; 
     align-items: center;
-    height: 100vh;
+    gap: 8em;
+    height: auto;
 }
 
-#projetsTitle{
-    font-size: 8em;
-    font-family: 'Oswald', sans-serif;
-    text-transform: uppercase;
-    color: #007fff;
+.projetDiv{
     position: relative;
-    transition: all .3s ease-in-out;
-}
-
-#projetsTitle:hover{
-    color: #00000000;
-    -webkit-text-stroke-width: 3px;
-    -webkit-text-stroke-color: #007fff;
-}
-
-#projetsTitle::before{
-    content: '';
-    background-color: #a9eafe;
-    position: absolute;
-    border-radius: 5em;
-    left: 0;
-    bottom: calc(50% - 8px);
-    width: 100%;
-    height: 8px;
-    z-index: -1;
-    transition: all .3s ease-in-out;
-}
-
-#projetsTitle:hover::before {
-    height: 40%;
-}
-
-/* Disposition Projet */
-#projetsList{
-    width: 100%;
-    height: 60vh;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 1em;
-}
-
-#projetsListRight{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    width: 50%;
-    height: 100%;
-    margin: 0.5em;
-}
-
-#projetsListRightBottom{
+    padding: 1em;
+    width: 60vw;
+    height: 30vw;
+    border-radius: 1em;
+    border: 1px solid #666666;
+    background: linear-gradient(45deg, #0000000e,#00000074 );
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    width: 100%;
-    height: 50%;
-    margin-top: 0.5em;
 }
 
-/* Liste Projet */
+.projetTexte{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 1em;
+    width: 45%;
+}
 
-#projetLeft{
-    width: 50%;
+.projetImage{
+    width: 45%;
     height: 100%;
-    margin: 0.5em;
-    background-color: #7f7fff;
+    object-fit: cover;
+    border-radius: 1em;
 }
 
-#projetRightTop{
-    width: 100%;
-    height: 50%;
-    margin-bottom: 0.5em;
-    background-color: #fff;
-
-}
-         
-#projetRightBottomLeft{
-    width: 50%;
-    height: 100%;
-    margin-right: 0.5em;
-    background-color: #007fff;
+.projetDate{
+    color: #7f7fff;
 }
 
-#projetRightBottomRight{
-    width: 50%;
-    height: 100%;
-    margin-left: 0.5em;
-    background-color: #a9eafe;
+.projetImgs{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1em;
 }
 
-.projet{
-    border-radius: 2em;
-    padding: 2em;
-    border: 3px solid #000;
+.projetImg{
+    width: 70px;
+    object-fit: cover;
 }
-                
+
+.projetNum{
+    position: absolute;
+    font-size: 8em;
+    font-weight: 600;
+    color: #00000000;
+    bottom:-10%;
+    right:-10%;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #7f7fff;
+}
