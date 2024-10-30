@@ -19,7 +19,6 @@ body{
     position: relative;
     padding: 1em;
     width: 60vw;
-    height: 30vw; 
     border-radius: 1em;
     border: 1px solid #666666;
     background: linear-gradient(45deg, #0000000e,#00000074 );

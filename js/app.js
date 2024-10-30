@@ -1,4 +1,5 @@
 const buttonFollow = document.querySelectorAll('.animFollow');
+const targets = document.querySelectorAll('[class*="reveal-"]');
 
 buttonFollow.forEach(element => {
     element.addEventListener('mousemove', (e) => {
@@ -12,7 +13,13 @@ buttonFollow.forEach(element => {
     element.addEventListener('mouseleave', () => {
         element.style.transform = 'translate(0, 0)';
     });
+
+    targets.forEach(function (target) {
+        target.classList.add('reveal-visible')
+    })
 });
+
+
 
 const burger = document.querySelector('.boxBurger');
 const sidenav = document.getElementById("mySideNav");
