@@ -80,3 +80,54 @@ main{
 #QA{
     width: 70%;
 }
+
+@media (max-width:767px){
+    
+    main{
+        flex-direction: column;
+    }
+    
+    #proposContent{
+        width: 70vw;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1em;
+    }
+    
+    #photoLeft img{
+        width: 100%;
+        border-radius: 1em;
+    }
+    
+    #textRight{
+        width: 100%;
+        padding-left: 0em;
+        border-left: 0px solid #a9eafe;
+        padding-bottom: 1em;
+        border-bottom: 2px solid #a9eafe;
+    }
+    
+    .imgCompFront{
+        width: 15vw;
+    }
+    
+    .imgCompBack{
+        width: 15vw;
+    }
+    
+    .imgCompDesign{
+        width: 15vw;
+    }
+    
+    .questionTitle{
+        font-size: 1.5em;
+    }
+    
+    
+    #QA{
+        width: 70vw;
+    }
+}

@@ -108,7 +108,6 @@ body{
 @media (max-width:767px) {
     body{
         width: 100%;
-        height: auto;
         background: #202020 ;
     }
     
@@ -158,45 +157,8 @@ body{
     }
     
     #footerIndex{
-        width: 100%;
-        display: flex;
-        flex-direction:column;
-        gap: 2vh;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    #cvA{
-        background-color: #ffffff00;
-        border: 2px solid #a9eafe;
-        border-radius: 4em;
-        padding: 0.8em;
-        transition: transform 0.1s ease;
-        color: #fff;
-    }
-    
-    #réseaux{
         display: none;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        gap: 1rem;
     }
     
-    .réseauxA{
-        background-color: #ffffff00;
-        border: 2px solid #a9eafe;
-        aspect-ratio: 1/1;
-        border-radius: 50%;
-        padding: 0.8em;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
     
-    .réseauxA img{
-        width: 1.5em;
-        height: 1.5em;
-    }
 }
