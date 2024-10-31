@@ -1,6 +1,7 @@
 body{
     width: 100%;
     height:100%;
+    overflow: hidden;
     background: linear-gradient(to bottom,#202020, #373737) ;
 }
 
@@ -23,9 +24,10 @@ body{
     width: 50%;
     height:80%;
 }
-¨
-.contactTitle{
-    font-size: 3em;
+
+h2{
+    font-size: 3.5em;
+    font-weight: 800;
     text-transform: uppercase;
     color: #7f7fff;
 }
@@ -63,7 +65,7 @@ body{
 }
 
 .submit{
-    width:33%;
+    width:50%;
 }
 
 .infos{
@@ -92,4 +94,90 @@ body{
 .réseauxA img{
     width: 1.5em;
     height: 1.5em;
+}
+
+@media (max-width:767px) {
+    body{
+        overflow: scroll;
+    }
+    
+    .contact{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 10vw;
+        width: 100dvw;
+        height: fit-content;
+    }
+    
+    .contactLeft{
+        padding: 0;
+        width: 80%;
+    }
+    ¨
+    h2{
+        text-align: center;
+        font-size: 1.5em;
+        margin-top: 5vh;
+    }
+    
+    .contactP{
+        text-align: center;
+        width: 100%;
+    }
+    
+    .contactRight{
+        padding: 0;
+        width: 80%;
+    }
+    
+    .input{
+        background-color: #00000000;
+        color: #fff;
+        padding:0.8em 0;
+        width: 100%;
+        border-bottom: 1px solid #666666;
+    }
+    
+    .input:focus{
+        outline: none;
+    }
+    
+    .formElement{
+        width: 100%;
+    }
+    
+    .submit{
+        width:100%;
+        margin-bottom: 5vh;
+    }
+    
+    .infos{
+        display: none;
+    }
+    
+    .contactRS{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 1em;
+    }
+    
+    .réseauxA{
+        background-color: #ffffff00;
+        border: 2px solid #a9eafe;
+        aspect-ratio: 1/1;
+        border-radius: 50%;
+        padding: 0.8em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .réseauxA img{
+        width: 1.5em;
+        height: 1.5em;
+    }
 }
