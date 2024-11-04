@@ -119,11 +119,13 @@ body{
     
     .contactTitle{
         margin-top: 7vh;
-        font-size: 2em;
+        font-size: 1.8em;
+        text-align: center;
     }
 
     .contactP{
         text-align: center;
+        font-size: 1.2em;
         width: 100%;
     }
     
