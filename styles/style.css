@@ -24,7 +24,10 @@
     background-size: contain;
     background-repeat: no-repeat;
     animation: cursorAnim 10s linear infinite;
+    transform: translate(-50%, -50%);
 }
+
+
 
 
 /** MenuBurger **/
@@ -173,17 +176,17 @@
 .link{
     position: relative;
     font-family: 'Oswald', sans-serif;
-    font-size: 0.8em;
+    font-size: 1em;
     font-weight: 500;
     text-transform: uppercase;
 }
 
 .link::before{
     content: '';
-    background-color: #fff;
+    background-color: #7f7fff;
     position: absolute;
     border-radius: 5em;
-    left: calc(50% - 1px);
+    right:0;
     bottom: 0;
     width: 2px;
     height: 2px;
@@ -191,7 +194,6 @@
 }
 
 .link:hover::before{
-    left: 0;
     width: 100%;
 }
 

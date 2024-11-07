@@ -30,19 +30,22 @@ const QA_item = document.querySelectorAll('.QA-item .questionTitle');
 const projets = document.querySelectorAll('.projetDiv');
 
 const cursor = document.querySelector('.cursor');
-document.addEventListener('mousemove', (event) => {
+document.addEventListener('mousemove', (e) => {
     if(cursor){
-        const x = event.clientX;
-        const y = event.clientY;
-        cursor.style.left = `${x}px`;
-        cursor.style.top = `${y}px`;
+        cursor.style.left = e.clientX + 'px';
+        cursor.style.top = e.clientY + 'px';
     }
-    
 });
+
+const video = document.querySelector('#video');
 
 // Actions
 
 document.addEventListener('DOMContentLoaded', () => {
+
+    video.addEventListener('click', () => {
+        video.paused? video.play() : video.pause();
+    })
 
     projets.forEach((projet) => {
         projet.addEventListener('click', () => {
