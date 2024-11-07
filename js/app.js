@@ -19,8 +19,6 @@ buttonFollow.forEach(element => {
     })
 });
 
-
-
 const burger = document.querySelector('.boxBurger');
 const sidenav = document.getElementById("mySideNav");
 let isBurgerActive;
@@ -43,10 +41,12 @@ const video = document.querySelector('#video');
 
 document.addEventListener('DOMContentLoaded', () => {
 
-    video.addEventListener('click', () => {
-        video.paused? video.play() : video.pause();
-    })
-/*
+    if(video){
+        video.addEventListener('click', () => {
+            video.paused? video.play() : video.pause();
+        })
+    }
+
     projets.forEach((projet) => {
         projet.addEventListener('click', () => {
             let projetID = projet.id;
@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
             window.location.href = 'projets/' + projetID + '.html';
         })
     });
-*/
+
     QA_item.forEach((question) => {
         question.addEventListener('click', () => {
             const answer = question.nextElementSibling;
