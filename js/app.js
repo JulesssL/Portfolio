@@ -27,17 +27,30 @@ let isBurgerActive;
 
 const QA_item = document.querySelectorAll('.QA-item .questionTitle');
 
+const projets = document.querySelectorAll('.projetDiv');
+
 const cursor = document.querySelector('.cursor');
 document.addEventListener('mousemove', (event) => {
-    const x = event.clientX;
-    const y = event.clientY;
-    cursor.style.left = `${x}px`;
-    cursor.style.top = `${y}px`;
+    if(cursor){
+        const x = event.clientX;
+        const y = event.clientY;
+        cursor.style.left = `${x}px`;
+        cursor.style.top = `${y}px`;
+    }
+    
 });
 
 // Actions
 
 document.addEventListener('DOMContentLoaded', () => {
+
+    projets.forEach((projet) => {
+        projet.addEventListener('click', () => {
+            let projetID = projet.id;
+            console.log(projet);
+            window.location.href = 'projets/' + projetID + '.html';
+        })
+    });
 
     QA_item.forEach((question) => {
         question.addEventListener('click', () => {
@@ -60,15 +73,4 @@ document.addEventListener('DOMContentLoaded', () => {
 })
 
 
-// Fonctions 
 
-function getAge(dateString) {
-    const today = new Date();
-    const birthDate = new Date(dateString);
-    const age = today.getFullYear() - birthDate.getFullYear();
-    const m = today.getMonth() - birthDate.getMonth();
-    if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
-        age--;
-    }
-    return age;
-}

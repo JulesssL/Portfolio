@@ -26,7 +26,12 @@ body{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    cursor: pointer;
 }
+
+.projetDiv:hover {
+    animation: shake .5s ease-in-out;
+  }
 
 .projetTexte{
     display: flex;
@@ -50,8 +55,10 @@ body{
 
 .projetImgs{
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
     gap: 1em;
 }
 
@@ -65,8 +72,8 @@ body{
     font-size: 8em;
     font-weight: 600;
     color: #00000000;
-    bottom:-10%;
-    right:-10%;
+    bottom:-10vh;
+    right:-10vh;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #7f7fff;
 }

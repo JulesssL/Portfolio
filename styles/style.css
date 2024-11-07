@@ -183,7 +183,7 @@
     background-color: #fff;
     position: absolute;
     border-radius: 5em;
-    left: 0;
+    left: calc(50% - 1px);
     bottom: 0;
     width: 2px;
     height: 2px;
@@ -191,6 +191,7 @@
 }
 
 .link:hover::before{
+    left: 0;
     width: 100%;
 }
 
@@ -254,7 +255,6 @@
 
 .boutonStyle{
     font-size: 1.2em;
-    margin-top: 2em;
     background-color: #ffffff00;
     border: 2px solid #a9eafe;
     border-radius: 4em;
@@ -362,6 +362,32 @@
        
     }
 }
+
+@keyframes shake {
+    0% {
+      transform: rotate(0);
+    }
+  
+    20% {
+      transform: rotate(-0.5deg);
+    }
+  
+    40% {
+      transform: rotate(0.5deg);
+    }
+  
+    60% {
+      transform: rotate(-0.2deg);
+    }
+  
+    80% {
+      transform: rotate(0.2deg);
+    }
+  
+    100% {
+      transform: rotate(0);
+    }
+  }
 
 /** ANimation Reveal **/
 
