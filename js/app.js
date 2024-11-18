@@ -28,10 +28,27 @@ const QA_item = document.querySelectorAll('.QA-item .questionTitle');
 const projets = document.querySelectorAll('.projetDiv');
 
 const cursor = document.querySelector('.cursor');
+const logos = document.querySelectorAll('.logo');
+const logoCursor = document.querySelector('.logoCursor')
 document.addEventListener('mousemove', (e) => {
     if(cursor){
         cursor.style.left = e.clientX + 'px';
         cursor.style.top = e.clientY + 'px';
+    }
+
+    if (logos.length > 0){
+        logos.forEach(element => {
+            element.addEventListener('mouseover', () => {
+                logoCursor.style.left = e.clientX + 'px';
+                logoCursor.style.top = e.clientY + 'px';
+                logoCursor.innerText = element.id;
+            });
+            element.addEventListener('mouseleave', () => {
+                logoCursor.style.left = '-50px';
+                logoCursor.style.top = '-50px';
+                logoCursor.innerText = '';
+            });
+        });
     }
 });
 
