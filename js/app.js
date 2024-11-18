@@ -39,14 +39,12 @@ document.addEventListener('mousemove', (e) => {
     if (logos.length > 0){
         logos.forEach(element => {
             element.addEventListener('mouseover', () => {
-                logoCursor.style.left = e.clientX + 'px';
-                logoCursor.style.top = e.clientY + 'px';
+                logoCursor.style.display = 'block';
                 logoCursor.innerText = element.id;
             });
             element.addEventListener('mouseleave', () => {
-                logoCursor.style.left = '-50px';
-                logoCursor.style.top = '-50px';
                 logoCursor.innerText = '';
+                logoCursor.style.display = 'none';
             });
         });
     }

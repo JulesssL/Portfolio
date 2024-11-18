@@ -29,17 +29,17 @@
 /** Curseur Logo Langage **/
 
 .logoCursor{
-    position: absolute;
-    top: -50px;
-    left: -50px;
+    display: none;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
     pointer-events: none;
     z-index: 999999;
     color: #fff;
     padding: 0.7em 0.9em;
     background-color: #001a33;
     border-radius: 10px;
-    font-size: 0.8em;
-    transform: translate(-50%, -50%);
+    font-size: 1em;
 }
 
 
