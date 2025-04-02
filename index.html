@@ -8,7 +8,9 @@
     <link rel="stylesheet" href="styles/styleIndex.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <link rel="icon" href="images/Logo-Secondaire.png" type="image/x-icon">
     <title>Portfolio - Jules LEROUX</title>
@@ -16,8 +18,51 @@
 
 <body>
     <div class="cursor"></div>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #121212;
+            color: white;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        .message {
+            max-width: 600px;
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1.2rem;
+            opacity: 0.8;
+        }
+    </style>
+    </head>
+
+    <body>
+        <div class="message">
+            <h1>🚧 En cours de refonte 🚧</h1>
+            <p>Mon portfolio est actuellement en reconstruction avec une nouvelle stack.<br>
+                Revenez bientôt pour découvrir la nouvelle version !</p>
+            <p style="font-size: 0.9rem; opacity: 0.5;">Merci de votre patience 🙌</p>
+        </div>
+    </body>
+
+    <!---
     <header class="burgerMenu">
 
         <button class="boxBurger">
@@ -33,19 +78,20 @@
                 <li><a class="burgerA" href="index.html">Accueil</li></a>
                 <li><a class="burgerA" href="projets.html">Mes Projets</a></li>
                 <li><a class="burgerA" href="propos.html">A propos</a></li>
-                <!--<li><a class="burgerA" href="contact.html">Contact</a></li>-->
+                <li><a class="burgerA" href="contact.html">Contact</a></li>
             </ul>
         </nav>
 
     </header>
 
     <main>
-        
+
         <div class="bienvenue">
             <div id="bienvenueTexte">
                 <h1 class="bigTitle reveal-2" id="bienvenueTitle">Bienvenue</h1>
-                <p id="bienvenueSubTitle" class="reveal-3">sur le portfolio de <span>Jules, développeur Web.</span></p> 
-                <a href="projets.html" id="bienvenuebutton" class="reveal-4 animFollow boutonStyle ">Découvrir mes différents projets.</a>
+                <p id="bienvenueSubTitle" class="reveal-3">sur le portfolio de <span>Jules, développeur Web.</span></p>
+                <a href="projets.html" id="bienvenuebutton" class="reveal-4 animFollow boutonStyle ">Découvrir mes
+                    différents projets.</a>
             </div>
             <img id="photoJules" class="reveal-5" src="images/Ukulele.jpg" alt="Photo de Jules LEROUX">
         </div>
@@ -53,14 +99,17 @@
 
     <footer id="footerIndex">
         <div id="cv">
-            <a class="animFollow boutonStyle" id="cvA" target="_blank" href="images/CV_digital_Jules_LEROUX.pdf" >Télécharger mon CV</a>
+            <a class="animFollow boutonStyle" id="cvA" target="_blank"
+                href="images/CV_digital_Jules_LEROUX.pdf">Télécharger mon CV</a>
         </div>
 
         <div id="réseaux">
-            <a class="réseauxA animFollow" href="https://www.linkedin.com/in/jules-leroux/"><img src="images/logo-linkedin.webp" alt="LinkedIn"></a>
-            <a class="réseauxA animFollow" href="https://github.com/JulesssL"><img src="images/logo-github.png" alt="GitHub"></a>
+            <a class="réseauxA animFollow" href="https://www.linkedin.com/in/jules-leroux/"><img
+                    src="images/logo-linkedin.webp" alt="LinkedIn"></a>
+            <a class="réseauxA animFollow" href="https://github.com/JulesssL"><img src="images/logo-github.png"
+                    alt="GitHub"></a>
         </div>
-    </footer>
+    </footer>->
 
 </body>
 

@@ -1,6 +1,8 @@
 const buttonFollow = document.querySelectorAll('.animFollow');
 const targets = document.querySelectorAll('[class*="reveal-"]');
 
+        window.location.href = "index.html";
+
 buttonFollow.forEach(element => {
     element.addEventListener('mousemove', (e) => {
         const rect = element.getBoundingClientRect();
